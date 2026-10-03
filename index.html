@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="weather-container">
+
+        <h1>Weather Dashboard</h1>
+
+
+        <!-- Search Section -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name"
+            >
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+        </div>
+
+
+        <!-- Messages -->
+        <div id="errorMessage"></div>
+
+        <div id="loadingMessage"></div>
+
+
+        <!-- Weather Card -->
+        <div class="weather-card">
+
+            <h2 id="cityName">
+                City Name
+            </h2>
+
+            <p id="countryName">
+                Country
+            </p>
+
+            <p id="localTime">
+                Local time
+            </p>
+
+            <p id="weatherDescription">
+                Weather condition
+            </p>
+
+
+            <!-- Weather Icon -->
+            <div class="weather-icon" id="weatherIcon">
+                🌤️
+            </div>
+
+
+            <!-- Temperature -->
+            <h3 id="temperature">
+                -- °C
+            </h3>
+
+
+            <!-- Weather Details -->
+            <div class="weather-details">
+
+                <div class="detail">
+
+                    <h4>
+                        Humidity
+                    </h4>
+
+                    <p id="humidity">
+                        -- %
+                    </p>
+
+                </div>
+
+
+                <div class="detail">
+
+                    <h4>
+                        Wind Speed
+                    </h4>
+
+                    <p id="windSpeed">
+                        -- km/h
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

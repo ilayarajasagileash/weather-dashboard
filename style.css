@@ -1,0 +1,138 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.weather-container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box button {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #1d4ed8;
+}
+
+.weather-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.weather-card h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.weather-card p {
+    color: #555;
+}
+
+.weather-icon {
+    font-size: 70px;
+    margin: 20px 0;
+}
+
+#temperature {
+    font-size: 45px;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.detail {
+    background: #f1f5f9;
+    padding: 15px;
+    border-radius: 12px;
+    flex: 1;
+}
+
+.detail h4 {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.detail p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+}
+
+#errorMessage {
+    color: #b91c1c;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    .search-box {
+        flex-direction: column;
+    }
+
+    .weather-details {
+        flex-direction: column;
+    }
+}
+#loadingMessage {
+    color: white;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+#countryName {
+    color: #666;
+    margin-top: 5px;
+}
+
+#localTime {
+    color: #777;
+    font-size: 14px;
+    margin-top: 5px;
+}
